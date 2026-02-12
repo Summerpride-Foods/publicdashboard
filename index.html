@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Company Name</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .logo {
+      max-width: 120px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 40px;
+      font-size: 2rem;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .link-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .link-card img {
+      max-width: 100%;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    .link-card span {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Optional logo -->
+    <img src="logo.png" alt="Your Company Logo" class="logo" />
+
+    <!-- Company name -->
+    <h1>Your Company Name</h1>
+
+    <!-- Links -->
+    <div class="links">
+      <a
+        href="https://example-site-one.com"
+        class="link-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="site-one-image.png" alt="Site One" />
+        <span>Site One</span>
+      </a>
+
+      <a
+        href="https://example-site-two.com"
+        class="link-card"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="site-two-image.png" alt="Site Two" />
+        <span>Site Two</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
